@@ -1,2 +1,2 @@
 # fantasy-names
-At open source fantasy names library
+An open source fantasy names library
