@@ -4,7 +4,8 @@
   "description": "For all your random fantasy character needs.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "lint": "eslint .",
+    "test": "mocha src/index.test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,11 @@
   "homepage": "https://github.com/MaeganW/fantasy-names#readme",
   "dependencies": {
     "unique-random-array": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "5.14.0",
+    "eslint-config-google": "0.12.0",
+    "mocha": "6.0.0"
   }
 }
