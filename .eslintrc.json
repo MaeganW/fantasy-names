@@ -1,8 +1,7 @@
 {
     "env": {
-        "browser": true,
         "commonjs": true,
-        "es6": true
+        "es6": false
     },
     "extends": "google",
     "globals": {
@@ -12,6 +11,5 @@
     "parserOptions": {
         "ecmaVersion": 2018
     },
-    "rules": {
-    }
+    "rules": {}
 }
