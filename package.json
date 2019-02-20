@@ -28,6 +28,7 @@
     "chai": "4.2.0",
     "eslint": "5.14.0",
     "eslint-config-google": "0.12.0",
+    "ghooks": "2.0.4",
     "mocha": "6.0.0",
     "nyc": "13.3.0"
   },
@@ -44,5 +45,10 @@
     "include": [
       "src"
     ]
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
   }
 }
