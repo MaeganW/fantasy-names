@@ -4,7 +4,8 @@
   "description": "For all your random fantasy character needs.",
   "main": "src/index.js",
   "scripts": {
-    "build": "babel --out-dir dist --ignore *.test.js src",
+    "prebuild": "rimraf dist",
+    "build": "babel --out-dir dist  --ignore *.test.js src",
     "lint": "eslint .",
     "test": "nyc mocha src/index.test.js"
   },
@@ -33,7 +34,8 @@
     "eslint-config-google": "0.12.0",
     "ghooks": "2.0.4",
     "mocha": "6.0.0",
-    "nyc": "13.3.0"
+    "nyc": "13.3.0",
+    "rimraf": "2.6.3"
   },
   "nyc": {
     "check-coverage": true,
