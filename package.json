@@ -2,7 +2,7 @@
   "name": "fantasy-names",
   "version": "1.0.0",
   "description": "For all your random fantasy character needs.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel  --copy-files  --out-dir dist  --ignore *.test.js src",
@@ -14,6 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/MaeganW/fantasy-names.git"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "fantasy",
     "names"
