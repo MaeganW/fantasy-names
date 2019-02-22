@@ -7,7 +7,7 @@
     "prebuild": "rimraf dist",
     "build": "babel  --copy-files  --out-dir dist  --ignore *.test.js src",
     "lint": "eslint .",
-    "test": "nyc mocha src/index.test.js",
+    "test": "NODE_ENV=test nyc mocha src/index.test.js",
     "validate": "npm-run-all --parallel test build"
   },
   "repository": {
@@ -67,9 +67,13 @@
     "presets": [
       "es2015"
     ],
-    "plugins": [
-      "istanbul"
-    ]
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
   },
   "config": {
     "ghooks": {

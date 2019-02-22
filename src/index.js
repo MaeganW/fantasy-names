@@ -1,4 +1,4 @@
-(function () {
+(() => {
   const random = require('unique-random-array');
   const fantasyFemaleNames = require('./female-lotr-names.json');
 
